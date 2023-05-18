@@ -8,8 +8,7 @@ import org.testng.annotations.BeforeClass;
 
 public class BasePage {
     protected WebDriver driver;
-    private String baseUrl = "Linkul de la siteul pe
-    care o sa va faceti proiectul final";
+    private String baseUrl = "https://www.lambdatest.com/selenium-playground/";
     public BasePage() {
         // Default constructor
     }
@@ -18,8 +17,7 @@ public class BasePage {
     }
     @BeforeClass
     public void setUp() {
-        System.setProperty("web-driver.chrome.driver",
-                "locatia catre chromedriver.exe");
+        System.setProperty("web-driver.chrome.driver", "/Users/roxananegru/Desktop/Oni IT/Automation program/Chrome Driver/chromedriver");
         driver = new ChromeDriver();
         driver.get(baseUrl);
     }
